@@ -1,6 +1,4 @@
-import { z } from 'zod'
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
-import { createGoalCompletion } from '../../functions/create-goal-completion'
 import { getWeekPendingGoals } from '../../functions/get-week-pending-goals'
 
 export const getPendingGoalsRoute: FastifyPluginAsyncZod = async app => {
